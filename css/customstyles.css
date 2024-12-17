@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(222, 145, 4);
+}
+img {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+}
+h2 {
+    font-family: Arial, sans-serif;
+    text-align: right;
+    margin: 0;
+    padding: 20px;
+    color: black;
+
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* 10x10 grid */
+    grid-gap: 2px;
+    justify-content: right;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #888;
+}
+
+.cell.revealed {
+    background-color: #fff;
+    cursor: default;
+}
+
+.cell.mine {
+    background-color: red;
+    color: white;
+}
+#play-again {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: right;
+    justify-content: right;
+    float:inline-end;
+}
+#play-again:hover {
+    background-color: #45a049;
+}
